@@ -8,7 +8,7 @@ window.onload = function (){
 
     acceptButton.onclick = function (){
         $.ajax({
-            url: 'http://webddplanet10/api/orders/store/',
+            url: 'api/orders/store/',
             data: {fullName: userFullName, phoneNumber: userPhoneNumber, message: userMessage, _token: token},
             type: 'POST',
             success: function (data) {
