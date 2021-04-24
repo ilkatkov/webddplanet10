@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    width: 100%;
+    width: 260px;
     margin-top: 15px;
     background-color: #bfdbff;
     border-radius: 30px;
@@ -23,14 +23,15 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:30px;
 }
 
-form {
+.order_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+
 }
 
 .form_el {
@@ -62,6 +63,11 @@ label+textarea {
     margin-top: 5px;
 }
 
+p{
+    margin: 0 0;
+    text-align: center;
+}
+
 button {
     font-family: 'Montserrat';
     font-size: 16px;
@@ -71,4 +77,12 @@ button {
     border: 2px solid rgb(68, 149, 255);
     border-radius: 10px;
     padding: 7px;
+}
+
+section+h5{
+    margin-top: 30px;
+}
+
+h5{
+    margin: 5px 0;
 }

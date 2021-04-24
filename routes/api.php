@@ -21,6 +21,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::post('orders/store', PATH . 'OrderController@store')->name('storeMessage');
+Route::middleware('cors')->post('orders/store', PATH . 'OrderController@store')->name('storeMessage');
 
 
