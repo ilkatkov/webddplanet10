@@ -6,16 +6,16 @@ Web DD Planet 10 - Штаб программирования, Белгород, 
 Установка:
 
 В .env нужно указать доступ к созданной базе данных в полях:
-DB_DATABASE=имя_бд
-DB_USERNAME=пользователь
-DB_PASSWORD=пароль
+DB_DATABASE=имя_бд  
+DB_USERNAME=пользователь  
+DB_PASSWORD=пароль  
 
 
 Для запуска проекта необходимо доустановить vendor, сгенерировать ключ приложения и запустить миграции:
 
-composer update
-php artisan key:generate
-php artisan migrate
+composer update  
+php artisan key:generate  
+php artisan migrate  
 
 
 Форма проверяет корректность ввода данных ФИО, номера телефона (с маской +7 (XXX) XXX-XX-XX) и текста обращения, 
