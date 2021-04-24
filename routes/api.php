@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+const PATH = "App\Http\Controllers\API\\";
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::post('orders/store', PATH . 'OrderController@store')->name('storeMessage');
+
+
